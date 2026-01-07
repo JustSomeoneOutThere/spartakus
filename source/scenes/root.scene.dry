@@ -46,35 +46,29 @@ Q.dissent = 0.05;
 Q.dissent_percent = 5;
 
 // factions
-Q.factions = ['left', 'center', 'labor', 'reformist', 'neorevisionist'];
+Q.factions = ['left', 'right', 'kpo'];
 // should this be normalized to 100%?
-Q.left_strength = 15;
-Q.left_dissent = 20;
-Q.center_strength = 30;
-Q.center_dissent = 0;
-Q.labor_strength = 25;
-Q.labor_dissent = 5;
-Q.reformist_strength = 25;
-Q.reformist_dissent = 5;
-Q.neorevisionist_strength = 5;
-Q.neorevisionist_dissent = 10;
+Q.left_strength = 30;
+Q.left_dissent = 0;
+Q.right_strength = 15;
+Q.right_dissent = 20;
+Q.kpo_strength = 10;
+Q.kpo_dissent = 30;
 
 // secret events...
-Q.unions_independent = 0;
-Q.centrists_resign = 0;
-Q.left_split = 0;
-Q.reformists_resigned = 0;
+Q.leftists_resign = 0;
+Q.right_split = 0;
 
 // have we discovered neorevisionism?
-Q.neorevisionism = 0;
+Q.kpo = 0;
 
 // crisis_urgency indicates how seriously the SPD is taking the economic crisis - scale from 0 to 10.
 Q.crisis_urgency = 0;
 // nazi_urgency indicates how seriously the SPD takes the nazis - scale from 0 to 10.
 Q.nazi_urgency = 0;
 // radicalization indicates how radical the SPD's rhetoric is - scale from 0 to 10.
-Q.radicalization = 0;
-// Support for the WTB plan and proto-Keynesian works creation plans in general
+Q.radicalization = 8;
+// Support for the left plan
 Q.wtb_support = 0;
 // Support for Pacifism within the SPD relative to 1928
 Q.pacifism = 0;
@@ -83,7 +77,7 @@ Q.democratization = 0;
 // Support for a communist coalition relative to 1928
 Q.communist_coalition = 0;
 // economic_plan: have we adopted *any* economic plan?
-// 1 - WTB plan, 2 - AfA-bund plan, 3 - radical plan (mass nationalization of industries)
+// 1 - radical plan (mass nationalization of industries)
 Q.economic_plan = 0;
 // have we officially adopted the WTB plan?
 Q.wtb_adopted = 0;
@@ -101,11 +95,11 @@ Q.moderate_plan_adopted = 0;
 // organizations
 
 // inter-party relations
-Q.z_relation = 50;
-Q.kpd_relation = 25;
-Q.ddp_relation = 60;
-Q.dvp_relation = 35;
-// DNVP and NSDAP are invariably hostile
+Q.z_relation = 15;
+Q.spd_relation = 25;
+Q.ddp_relation = 15;
+// DNVP, DVP and NSDAP are invariably hostile
+Q.dvp_relation = 0;
 Q.DNVP_relation = 10;
 Q.NSDAP_relation = 0;
 
@@ -228,7 +222,7 @@ Q.old_middle_qol = 100;
 Q.new_middle_qol = 100;
 
 Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'catholics'];
-Q.parties = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
+Q.parties = ['kpd', 'spd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
 
 // TODO: add 'sapd' later on
 Q.sapd_formed = 0;
